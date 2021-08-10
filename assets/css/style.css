@@ -1,0 +1,439 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.header__container {
+    justify-content: space-between;
+    padding: var(--mt-2) 0
+}
+
+.logo__milktea {
+    font-weight: var(--font-bold-3);
+    color: var(--title-big-color);
+}
+
+.header__item {
+    margin-left: var(--mt-4);
+    color: var(--text-color);
+}
+
+.header__close {
+    display: none;
+}
+
+.header__cart {
+    margin-left: 40px;
+    color: #fff;
+    background-color: var(--bg-color);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.header__toggle {
+    display: none;
+}
+
+
+/* Main */
+
+.main {
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+
+/* Home */
+
+.home-container {
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: var(--mt-4);
+}
+
+.data-title {
+    font-size: var(--h2-data-title);
+    color: var(--title-big-color);
+    margin-bottom: var(--mb-0);
+}
+
+.data-subtitle {
+    font-size: var(--h3-sub-title);
+    margin-bottom: var(--mb-0);
+}
+
+.home__image {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* About us*/
+
+.about-container {
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--mt-4);
+}
+
+.data-subtitle__add {
+    font-size: var(--mt-2);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0);
+}
+
+.about__image {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* Services */
+
+.services {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.services-container {
+    margin-top: var(--mt-4);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--mt-4);
+}
+
+.service__item-img {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: var(--mt-3);
+    fill: var(--bg-color);
+}
+
+.service__item-title {
+    margin-bottom: var(--mt-2);
+}
+
+
+/* Menu */
+
+.menu {
+    margin-top: 100px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.menu-container {
+    margin-top: var(--mt-3);
+    justify-content: center;
+}
+
+.menu-container__btn {
+    color: var(--txt-span-color);
+    background-color: #fff;
+    padding: 10px 25px;
+    margin-right: 15px;
+    border-radius: 25px;
+    border: 1px solid var(--txt-span-color);
+}
+
+.menu-container__list {
+    margin-top: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 80px;
+    grid-column-gap: 40px;
+}
+
+.menu-item {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.25s linear;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.menu-item {
+    display: none;
+}
+
+.active-food {
+    display: block;
+}
+
+.btn-active {
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+.menu-item__img {
+    margin-bottom: var(--mb-2);
+}
+
+.menu-item__title {
+    font-size: 15px;
+    margin-bottom: var(--mb-0);
+}
+
+.menu-item__price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-item__cart {
+    position: absolute;
+    color: #fff;
+    background-color: var(--bg-1-color);
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    top: 86%;
+    right: 0;
+}
+
+
+/* App */
+
+.app-container {
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--mt-4);
+}
+
+.app__image {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.app-container__links {
+    margin-top: var(--mt-3);
+    justify-content: space-between;
+}
+
+.app-container__link {
+    width: 200px;
+}
+
+
+/* Contact */
+
+.contact-container {
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--mt-4);
+}
+
+.contact-container__socials {
+    flex-direction: column;
+}
+
+.contact-container__link {
+    justify-content: start;
+    font-size: 20px;
+    align-items: center;
+    text-align: start;
+    margin: 30px;
+}
+
+.contact-container__link i {
+    margin-right: 10px;
+    color: var(--bg-color);
+}
+
+.contact-container__link p {
+    color: var(--text-color);
+}
+
+
+/* Subcribes */
+
+.subscribe-container {
+    background-color: var(--bg-color);
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--mt-4);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.subscribe-title {
+    color: #fff;
+    text-align: center;
+}
+
+.countdown {
+    justify-content: center;
+}
+
+.countdown div {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color);
+    color: var(--bg-color);
+    margin: 0px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px 0 0 0;
+}
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background-color: var(--bg-color);
+    color: #fff;
+    border: 1px solid var(--bg-1-color);
+    font-size: 11px;
+    line-height: 35px;
+    font-weight: 300;
+    border-radius: 0 0px 12px 0px;
+}
+
+.countdown #day::before {
+    content: "Days";
+}
+
+.countdown #hour::before {
+    content: "Hour";
+}
+
+.countdown #minute::before {
+    content: "Minute";
+}
+
+.countdown #second::before {
+    content: "Second";
+}
+
+.subscribe-form {
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.subscribe-btn {
+    margin-top: 1px;
+}
+
+
+/* Footer */
+
+.footer-container__list {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+    column-gap: 40px;
+}
+
+.logo-title {
+    color: var(--bg-color);
+}
+
+.list-item li {
+    margin: var(--mt-1) 0;
+}
+
+.footer-desc {
+    margin: var(--mt-1) 0;
+}
+
+.social-link {
+    margin-right: var(--mt-2);
+    color: var(--text-color);
+}
+
+.social-link:hover {
+    color: var(--bg-color);
+}
+
+.footer-link {
+    color: var(--text-color);
+}
+
+.footer-link:hover {
+    color: var(--bg-color);
+}
+
+.footer-copy {
+    margin-top: var(--mt-1);
+    color: var(--text-color);
+}
+
+
+/* Scroll */
+
+.scroll-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: rgba(6, 156, 84, 0.5);
+    color: var(--color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.25s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-top:hover {
+    background-color: var(--bg-color);
+}
+
+.scrolltop-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*CusTommer Scroll*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color);
+}
+
+.is-fixed {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5 linear;
+}
